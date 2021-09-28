@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<style>
+input[type="text"], input[type="password"], input[type="email"], select,
+	input[type="number"] {
+	border: none;
+	background: silver;
+	height: 50px;
+	font-size: 16px;
+	padding: 15px;
+	width: 45%;
+	border-radius: 25px;
+	margin-left: 20%;
+}
+
+h1 {
+	margin-left: 20%;
+}
+
+hr {
+	width: 25%;
+}
+
+body {
+	padding: 8em 0 9em 0;
+	background-image: url("search.jpeg");
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="searchDonorAction.jsp">
+		<center>
+			<h2>
+				<b>Enter the BloodGroup</b>
+			</h2>
+			<select name="bloodgroup" title="Please select any one" required>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+			</Select> <br> <br> <br> <br>
+			<button type="submit" class="button">Search</button>
+		</center>
+	</form>
+
+</body>
+</html>
